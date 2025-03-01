@@ -28,6 +28,7 @@ const SignUp = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <Grid2 container spacing={2}>
             {[
+              { name: "username", label: "Username", type: "text", required: true },
               { name: "email", label: "Email", type: "text", required: true },
               { name: "password", label: "Password", type: "password", required: true },
               { name: "phone", label: "Phone", type: "text" },
