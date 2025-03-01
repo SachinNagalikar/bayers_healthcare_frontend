@@ -4,12 +4,11 @@
     background-color: grey;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 .heading{
-    margin-top: 13px;
-    padding-left: 10px;
+    color: white;
 }
 .signin-btn{
-    padding-right: 10px;
     cursor: pointer;
 }

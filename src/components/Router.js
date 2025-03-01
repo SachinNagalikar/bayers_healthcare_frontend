@@ -4,7 +4,9 @@ import Home from '../pages/Home';
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 import Header  from './Header';
-const Router = () => {
+import PatientDashboard from '../pages/PatientDashboard';
+import MyProfile from '../pages/MyProfile';
+const Router = (props) => {
     return (
         <div>
             <BrowserRouter>
@@ -13,6 +15,8 @@ const Router = () => {
                     <Route path='/' element={<Home />} />
                     <Route path='/signin' element={<SignIn />} />
                     <Route path='/signup' element={<SignUp />} />
+                    <Route path='/patientdashboard' element={<PatientDashboard/>} />
+                    <Route path='/myprofile' element={<MyProfile/>} />
                 </Routes>
             </BrowserRouter>
         </div>

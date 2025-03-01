@@ -13,6 +13,7 @@ const APIService = async (email, password) => {
     try {
     //   const response = await api.post("/login", { email, password });
     //   return response.data; // Should return token or user data
+    return {name:'vignesh',token:'hihihshslokjj'}//sample res
     } catch (error) {
       throw error.response ? error.response.data : { message: "Network Error" };
     }

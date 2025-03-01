@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import './signin.css';
 import APIService from '../services/APIService';
+import { useNavigate } from "react-router-dom";
 const SignIn = () => {
     const [email,setEmail]=useState();
     const[pass,setPass]=useState();
-
+    const navigate = useNavigate();
     const handleSubmit=async(e)=>{
         e.preventDefault();
         try{
-            const res=await APIService(email,pass);
+            // const res=await APIService(email,pass);
             // localStorage.setItem("token", res.token);
+            navigate('/patientdashboard');
+
         }catch(err){
             console.log('error is=>',err)
         }
