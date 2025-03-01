@@ -1,0 +1,14 @@
+.custom-header{
+    height: 50px;
+    border: 1px solid black;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.heading{
+    color: white;
+}
+.signin-btn{
+    cursor: pointer;
+}
